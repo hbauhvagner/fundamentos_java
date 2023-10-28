@@ -4,18 +4,20 @@ public class TesteDePessoa {
     
     public static void main(String[] args) {
         
-        Pessoa pessoa1 = new Pessoa();
-        pessoa1.cpf = "33322211";
-        pessoa1.nome = "Vagner";
-        pessoa1.idade = 32;
+        Professor professor = new Professor();
+        professor.setCpf("333222111");
+        professor.setNome("Vagner");
+        professor.setIdade(32);
+        professor.setSalario(50000);
 
-        System.out.println(pessoa1.imprimirDadosDaPessoa());
+        System.out.println(professor.imprimirDadosDaPessoa());
 
-        Pessoa pessoa2 = new Pessoa();
-        pessoa2.cpf = "11122233";
-        pessoa2.nome = "Joana";
-        pessoa2.idade = 3;
+        Aluno aluno = new Aluno();
+        aluno.setCpf("111222333");
+        aluno.setNome("Joana");
+        aluno.setIdade(3);
+        aluno.setMatricula("898989");
 
-        System.out.println(pessoa2.imprimirDadosDaPessoa());
+        System.out.println(aluno.imprimirDadosDaPessoa());
     }
 }
